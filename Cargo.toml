@@ -1,6 +1,23 @@
-[package]
-name = "opentask"
+[workspace]
+resolver = "3"
+members = [
+    "crates/opentask-api",
+    "crates/opentask-backend",
+    "crates/opentask-config",
+    "crates/opentask-core",
+    "crates/opentask-fs",
+    "crates/opentask-markdown",
+    "crates/opentask-persistence",
+    "crates/opentask-service",
+    "crates/opentask-sqlite",
+    "crates/opentask-sync",
+]
+
+[workspace.package]
 version = "0.1.0"
 edition = "2024"
-
-[dependencies]
+authors = ["Taylor Whitton"]
+license = "MIT"
+repository = "https://github.com/taylorw-dev/opentask"
+homepage = "https://github.com/taylorw-dev/opentask"
+description = "An open source task management solution supporting a variety of frontend offerings"
